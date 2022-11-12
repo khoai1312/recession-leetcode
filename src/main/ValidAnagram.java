@@ -9,6 +9,10 @@ public class ValidAnagram {
         System.out.println(isValidAnagram("rat", "car"));
     }
 
+    /*
+    TODO : is there a more efficient way to solve this ?
+    TODO : more efficient way to traverse through a string ?
+     */
     public static boolean isValidAnagram (String s, String t) {
         if (s.length() != t.length()) {
             return false;
