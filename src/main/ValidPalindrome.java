@@ -8,12 +8,14 @@ public class ValidPalindrome {
 
     public static boolean isPalindrome(String s) {
         String lowercaseStr = s.toLowerCase();
+        // Remove non-alphanumeric characters using regex :
         String nonAlphanumericStr = lowercaseStr.replaceAll("[^A-Za-z0-9]", "");
         System.out.println("non-alphanumeric string : " + nonAlphanumericStr);
 
         int start = 0;
         int end = nonAlphanumericStr.length() - 1;
 
+        // Another way : while (end > start)
         while (start < nonAlphanumericStr.length() && end > 0) {
             if (nonAlphanumericStr.charAt(start) != nonAlphanumericStr.charAt(end)) {
                 return false;
