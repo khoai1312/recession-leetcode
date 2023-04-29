@@ -63,7 +63,6 @@ class Solution {
                 if (dependentCourseDetails.inDegrees == 0) {
                     coursesWithNoPrerequisites.add(dependentCourse);
                 }
-
             }
         }
 
