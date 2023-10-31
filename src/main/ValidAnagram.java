@@ -13,7 +13,7 @@ public class ValidAnagram {
     TODO : is there a more efficient way to solve this ?
     TODO : more efficient way to traverse through a string ?
      */
-    public boolean isAnagram(String s, String t) {
+    public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
         }
